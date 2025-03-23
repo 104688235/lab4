@@ -1,0 +1,55 @@
+/*
+
+filename: TranVietHoang
+
+author: Hoang
+
+created: 22/3
+
+last modified: 23/3
+
+description: lab04.html
+
+*/
+
+* { font-family: calibri, sans-serif; 
+    color:#2F4F4F; 
+    font-size: 0,2em;
+}
+h1 { 
+    color: purple; 
+    font-size: 2em; /* makes the font size bigger than 2 times */
+    font-weight: bold; 
+}
+h2 {
+    color: rgb(0,128,128);
+    font-size: 1,5em;
+    font-weight: bold;
+
+}
+
+.special {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 2px;
+}
+
+
+table, th, td, tr, thead, tbody {   /* group selectors*/
+    border: 1px solid black;
+}
+
+nav {
+    display: flex; /* Puts all elements in one line */
+    gap: 5px; /* Adds space between boxes */
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1px 1px;
+    color: rgb(8, 8, 8);
+    border: solid black; /* Border for box */
+}
+
+
