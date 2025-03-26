@@ -11,23 +11,36 @@
         .abc {
             color: red;
         }
+        .container {
+          display: flex;
+        }
+
+        .content {
+          border-left: 4px solid gray; /* Left-side vertical line */
+          padding-left: 15px; /* Space between the line and content */
+          margin-left: 20px; /* Shift content a bit */
+          width: 80%; /* Adjust width to fit the layout */
+        }
+        
 
     </style>
-    <link rel="stylesheet" href="/New folder/lab4/styles/lab4.css">  <!--rel means relationship between html and css file-->
+    <link rel="stylesheet" type="text/css" href="/New folder/lab4/styles/lab4.css">  <!--rel means relationship between html and css file-->
 </head>
 <body>
-    <header>
+  <div class="container">
+    <div class="content">
+      <header>
         <h1>HTML 5 Basic Content Elements with some simple CSS</h1>
         <nav>
-            <a href="#headings">Heading and Paragraphs</a> 
-            <a href="#sc">Special Characters</a> 
-            <a href="#lists">Lists</a> 
-            <a href="#tables">Tables</a>
-            <a href="#images">Images</a>
-            <a href="#hyperlinks">Hyperlinks</a>
+          <ul>
+            <li><a href="#headings">Heading and Paragraphs</a></li> 
+            <li><a href="#sc">Special Characters</a> </li>
+            <li><a href="#lists">Lists</a> </li>
+            <li><a href="#tables">Tables</a> </li>
+            <li><a href="#images">Images</a> </li>
+            <li><a href="#hyperlinks">Hyperlinks</a> </li>
+          </ul>
         </nav>
-
-
     </header>
     <hr>
     <article>   
@@ -36,7 +49,7 @@
            </aside>
            <h2 id="headings">Headings and Paragraphs </h2>
            <p>Headings and paragraphs are BLOCK elements</p>
-           <h3 class="abc">Headings</h3>
+           <h3 class="abc">Headings</h3>  <!--internal css-->
            <p>There are 6 levels of heading. Headings are logical marked. Do not skip levels. If you want to change the size of a heading, don't change its level - change the CSS.</p>
            <h3>Paragraphs</h3>
            <p>Paragraphs contain the body text of a web page. You cannot put another block element inside a paragraph.</p>
@@ -121,17 +134,17 @@
             </table>
            
            <h2 id="hyperlinks">Hyperlinks</h2>
-           <p><a href="https://swinburne.instructure.com" title="This takes you to Canvas"> This is a link to an external site Canvas</a></p>
+           <p><a href="https://swinburne.instructure.com" title="This takes you to Canvas" target="_blank"> This is a link to an external site Canvas</a></p>
            <p>This is a link to the <a href="#list">List Section </a> of this Web page</p>
            <p>This is a link using <a href="mailto:someone@swin.edu.au"> email</a> rather than an http protocol</p> 
            
-           <h2 id="images" style="text-align: right;">Images</h2>
+           <h2 id="images" style="text-align: center;">Images</h2>
            <p>This thumbnail image is used as a hyperlink to a larger version of the image</p>
            <a>  <img src="/New folder/lab4/mycat.jpg" alt="Photo of my cat" title="Filesize 222kb " width="100" /></a>
-     
-           
-           <hr />
     </article>
+    </div>
+  </div>
+  <hr>
     <footer>
         <p style="text-align: right;">Lab04 - Task 3</p>
     </footer>

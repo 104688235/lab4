@@ -16,10 +16,12 @@ description: lab04.html
     color:#2F4F4F; 
     font-size: 0,2em;
 }
-h1 { 
-    color: purple; 
-    font-size: 2em; /* makes the font size bigger than 2 times */
-    font-weight: bold; 
+
+h1{
+    color: rgb(144, 40, 118);
+    font-size: 2em;
+    font-weight: bold;
+
 }
 h2 {
     color: rgb(0,128,128);
@@ -39,17 +41,25 @@ table, th, td, tr, thead, tbody {   /* group selectors*/
     border: 1px solid black;
 }
 
-nav {
-    display: flex; /* Puts all elements in one line */
-    gap: 5px; /* Adds space between boxes */
-    padding: 5px;
+header nav ul{    /* it means that in header in nav every ul item has to be the same design  */
+    list-style-type: none;
+    text-align: left;
 }
 
-nav a {
-    text-decoration: none;
-    padding: 1px 1px;
-    color: rgb(8, 8, 8);
-    border: solid black; /* Border for box */
+header nav ul li{   /* everything list item has to be the same*/
+    display: inline-block;
+    border: 2px solid black;
+    margin: 0 1px;    /* size of anything around the element(this case is list item)*/
 }
 
+header nav ul li a{
+    text-decoration: none;  /* do not make nav link underline*/
+    color:rgb(181, 215, 217);
+    border: 1px black;
+}
 
+header nav ul li a:hover {  /* when use mouse over the a tag it will change*/
+    color: yellow;
+}
+
+/* if you want to put a image in the middle of page you will use display:block and then use the margin to put it in the middle*/
